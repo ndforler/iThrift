@@ -6,25 +6,24 @@ body {
 }
 
 header{
-  display: block;
-  background-color: white !important;
+font-weight: bold;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0px;
 }
 
 h1{
-  position: fixed;
-  top: 1%;
-	margin: 0;
-	padding-left: 0;
+  margin: 0px;
+  margin-left: 10px;
   float: left;
-  display: block;
 }
 
 nav {
-  position: fixed;
-  top: 2%;
-  height:20%;
-  width: 100%;
-  padding-bottom: 2%;
+  margin: 15px;
+  float: right;
 }
 
 nav ul{
@@ -36,36 +35,54 @@ nav ul{
 }
 
 nav li{
-  padding: 0;
+  transition: 0.7s;
   display: inline;
   padding: 10px;
-  background-color: lightgrey;
+  background-color: #262626;
+}
+
+nav li:hover{
+  transition: 0.7s;
+  background-color: #333;
 }
 
 nav li a{
-  color: hotpink;
+  transition: 0.5s;
+  color: #D3E7EE;
   text-decoration: none;
+  font-weight: bold;
 }
 
 nav li a:link {
-  color: hotpink;
+  color: #D3E7EE;
 }
 
 nav li a:visited {
-  color: hotpink;
+  color: #D3E7EE;
 }
-
-nav li a:hover {
+nav li a:hover{
+  transition: 0.5s;
   color: hotpink;
   text-decoration: none;
 }
 
 nav li a:active {
-  color: hotpink;
+  color: #D3E7EE;
 }
 
 p {
   padding-top:15%;
   font-size: 15px;
   font-weight: 600;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
