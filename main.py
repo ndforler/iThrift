@@ -45,6 +45,17 @@ for span in soup.find_all(class_='amt'):
 from bs4 import BeautifulSoup
 import requests
 import csv
+import cgi
+
+form=cgi.FieldStorage()
+input_text = form.getfirst("textinput")
+
+print "Content-type:text/html\r\n\r\n"
+print "<html>"
+print "<body>"
+print "<p>%s</p>"%input_text
+print "</body>"
+print "</html>"
 
 page = requests.get("https://www.ebay.ca/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xsocks.TRS0&_nkw=socks&_sacat=0")
 
