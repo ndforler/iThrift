@@ -53,20 +53,17 @@ nav li a{
   font-weight: bold;
 }
 
-nav li a:link {
+nav li a:link nav li a:visited{
   color: #D3E7EE;
 }
 
-nav li a:visited {
-  color: #D3E7EE;
-}
 nav li a:hover{
   transition: 0.5s;
   color: hotpink;
   text-decoration: none;
 }
 
-nav li a:active {
+nav li a:active{
   color: #D3E7EE;
 }
 
@@ -76,13 +73,24 @@ p {
   font-weight: 600;
 }
 
-.button {
-  background-color: #4CAF50; /* Green */
+button {
+  transition: 0.5s;
+  background-color: #333;
+  color: #D3E7EE;
   border: none;
-  color: white;
-  padding: 15px 32px;
+  padding: 1% 2.5%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
+}
+
+button:hover {
+  transition: 0.5s;
+  background-color: #262626;
+  color: hotpink;
+}
+
+input{
+  padding: 1%;
 }
