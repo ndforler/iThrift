@@ -42,6 +42,7 @@
 
 # Import libraries -------------------#
 #you need to properly import requests and BeautifulSoup on to your computer
+from flask import request,redirect
 from bs4 import BeautifulSoup
 import requests
 import csv
@@ -57,7 +58,8 @@ print "<p>%s</p>"%input_text
 print "</body>"
 print "</html>"
 
-def test_function():
+@app.route('/test',methods = ['POST'])
+def test():
     print("test")
 
 page = requests.get("https://www.ebay.ca/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xsocks.TRS0&_nkw=socks&_sacat=0")
