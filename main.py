@@ -3,6 +3,7 @@
 from bs4 import BeautifulSoup
 import requests
 import csv
+from django.http import HttpResponse
 
 with open('index.html') as html_file:
     soup = BeautifulSoup(html_file, 'lxml')
