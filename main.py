@@ -57,6 +57,9 @@ print "<p>%s</p>"%input_text
 print "</body>"
 print "</html>"
 
+def test_function():
+    print("test")
+
 page = requests.get("https://www.ebay.ca/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xsocks.TRS0&_nkw=socks&_sacat=0")
 
 soup = BeautifulSoup(page.content, 'html.parser')
